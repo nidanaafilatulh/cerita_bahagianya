@@ -1,0 +1,109 @@
+.contentMainbar {
+    width: 100%;
+}
+.search {
+    margin: 50px auto;
+    width: 90%;
+    display: flex;
+    justify-content: end;
+}
+.search form {
+    border-bottom: 1px solid black;
+}
+.search form input {
+    padding: 2px;
+    font-size: 15px;
+    outline: none;
+    font-family: rubik;
+    border: none;
+}
+.search button {
+    background-color: transparent;
+    border: none;
+}
+.search button img {
+    width: 20px;
+}
+.alertSuccess {
+    width: 90%;
+    margin: auto;
+    padding: 5px;
+    font-family: rubik;
+    background-color: greenyellow;
+    color: white;
+}
+
+
+table {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+table thead {
+    background-color: #9BB0C1;
+    font-family: rubik;
+    font-weight: lighter;
+    color: white;
+}
+table thead th {
+    padding: 5px;
+}
+table tbody {
+    font-family: popin;
+}
+
+
+table tbody tr:nth-child(odd) {
+    background-color: whitesmoke;
+}
+table tbody td, table tbody th { 
+    text-align: center; 
+}
+
+table tbody img {
+    width: 18px;
+    margin: auto;
+}
+
+table tbody .action {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px;
+    justify-content: center;
+}
+table tbody .action a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4px;
+    border-radius: 5px;
+}
+table tbody .view {
+    background-color: #EADFB4;
+}
+table tbody .share {
+    background-color: #EADFB4;
+}
+table tbody .catat_tamu {
+    background-color: #EADFB4;
+}
+table tbody .edit {
+    background-color: #EADFB4;
+}
+table tbody form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+table tbody button {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 5px;
+    padding: 4px;
+    outline: none;
+    background-color: #EADFB4;
+}
