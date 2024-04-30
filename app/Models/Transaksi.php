@@ -13,4 +13,9 @@ class Transaksi extends Model
     use HasFormatRupiah;
     protected $table = 'transaksi';
     protected $guarded = ['id'];
+
+    public function post()
+    {
+        $this->hasMany(Post::class);
+    }
 }

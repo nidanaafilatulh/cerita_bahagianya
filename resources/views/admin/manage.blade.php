@@ -9,6 +9,9 @@
             <button type="submit"><img src="{{asset('svg/other/search.svg')}}"></button>
         </form>
     </div>
+    <div>
+        <a href="/dashboard/create" class="btn btn-primary btn-lg">Tambah Undangan</a>
+    </div>
     @if (session('success'))
         <div class="alertSuccess">
             {{session('success')}}

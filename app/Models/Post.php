@@ -13,11 +13,6 @@ class Post extends Model
         'id',
     ];
 
-    public function comment()
-    {
-        $this->hasMany(Comment::class);
-    }
-
     public function scopeFilter($query)
     {
         if (request('search')) {

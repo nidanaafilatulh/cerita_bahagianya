@@ -24,6 +24,38 @@
 .search button img {
     width: 20px;
 }
+
+.btn {
+    display: inline-block;
+    margin: 0px 25px 30px 60px;
+    font-size: 10px;
+    font-weight: bold;
+    font-family: rubik;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+  
+/* CSS untuk tombol warna primer */
+.btn-primary {
+    background-color: #51829B;
+}
+  
+  /* CSS untuk tombol besar */
+.btn-lg {
+    font-size: 15px;
+    padding: 10px 20px;
+}
+  
+  /* Efek hover untuk tombol */
+.btn:hover {
+    opacity: 0.8;
+}
+
 .alertSuccess {
     width: 90%;
     margin: auto;

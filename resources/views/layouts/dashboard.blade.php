@@ -27,10 +27,10 @@
             <div class="flexBeetween">
                 <div class="flexMenu">
                     <a href="/dashboard"><img src="{{asset('svg/other/home.svg')}}">Home</a>
-                    <a href="/dashboard/manage"><img src="{{asset('svg/other/manage.svg')}}">Manage Postingan</a>
-                    <a href="/dashboard/create"><img src="{{asset('svg/other/plus.svg')}}">Tambah Postingan</a>
+                    <a href="/dashboard/manage"><img src="{{asset('svg/other/manage.svg')}}">Undangan</a>
+                    {{-- <a href="/dashboard/create"><img src="{{asset('svg/other/plus.svg')}}">Tambah Postingan</a> --}}
                     <a href="/dashboard/transaksi"><img src="{{asset('svg/other/transaksi.svg')}}">Transaksi</a>
-                    <a href="/dashboard/transaksi/create"><img src="{{asset('svg/other/plus.svg')}}">Tambah Transaksi</a>
+                    {{-- <a href="/dashboard/transaksi/create"><img src="{{asset('svg/other/plus.svg')}}">Tambah Transaksi</a> --}}
                 </div>
                 <form action="/logout" method="POST" id="logout">
                     @csrf

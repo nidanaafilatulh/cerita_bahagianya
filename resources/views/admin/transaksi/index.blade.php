@@ -6,10 +6,13 @@
 
 @section('mainbar')
     <div class="search">
-        <form action="/dashboard/manage" method="GET">
-            <input type="text" name="search" placeholder="Masukkan slug">
+        {{-- <form action="/dashboard/transaksi" method="GET">
+            <input type="text" name="search" placeholder="Masukkan kode transaksi">
             <button type="submit"><img src="{{ asset('svg/other/search.svg') }}"></button>
-        </form>
+        </form> --}}
+    </div>
+    <div>
+        <a href="/dashboard/transaksi/create" class="btn btn-primary btn-lg">Tambah Transaksi</a>
     </div>
     @if (session('success'))
         <div class="alertSuccess">
@@ -31,6 +34,7 @@
                 <tr>
                     <td>{{ $data->id }}</td>
                     <td>{{ $data->id_customer }}</td>
+                    {{-- <td>{{ $data->id_undangan}}</td> --}}
                     <td>{{ $data->tanggal_transaksi }}</td>
                     <td>{{ $data->formatRupiah('jumlah_transaksi') }}</td>
                     <td class="action">
