@@ -19,4 +19,8 @@ class Post extends Model
             $query->where('slug', 'LIKE', '%'.request('search').'%');
         }
     }
+
+    public function transaksi(){
+        return $this->belongsTo(Transaksi::class);
+    }
 }

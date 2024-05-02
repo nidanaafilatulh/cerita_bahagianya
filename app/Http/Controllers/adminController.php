@@ -36,9 +36,9 @@ class adminController extends Controller
 
     public function transaksiIndex()
     {
-        return view('admin.transaksi.index', [
-            'transaksi' => Transaksi::select('id_customer', 'id', 'nama_customer', 'jumlah_transaksi','tanggal_transaksi')->get(),
-        ]);
+        $transaksi = Transaksi::all();
+
+        return view('admin.transaksi.index', compact('transaksi'));
     }
     public function transaksiCreate()
     {

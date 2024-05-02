@@ -6,8 +6,8 @@
 
 @section('mainbar')
     <div class="search">
-        {{-- <form action="/dashboard/transaksi" method="GET">
-            <input type="text" name="search" placeholder="Masukkan kode transaksi">
+        {{-- <form action="/dashboard/transaksi/" method="GET">
+            <input type="text" name="search" placeholder="Masukkan id transaksi">
             <button type="submit"><img src="{{ asset('svg/other/search.svg') }}"></button>
         </form> --}}
     </div>
@@ -24,6 +24,7 @@
             <tr>
                 <th>ID Transaksi</th>
                 <th>ID Customer</th>
+                <th>ID Undangan</th>
                 <th>Tanggal Transaksi</th>
                 <th>Total Transaksi</th>
                 <th>Action</th>
@@ -34,7 +35,13 @@
                 <tr>
                     <td>{{ $data->id }}</td>
                     <td>{{ $data->id_customer }}</td>
-                    {{-- <td>{{ $data->id_undangan}}</td> --}}
+                    <td>
+                        <ul>
+                            @foreach ($data->posts as $post)
+                                <li>{{ $post->id }}</li>
+                            @endforeach
+                        </ul>
+                    </td>
                     <td>{{ $data->tanggal_transaksi }}</td>
                     <td>{{ $data->formatRupiah('jumlah_transaksi') }}</td>
                     <td class="action">

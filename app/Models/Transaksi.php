@@ -14,8 +14,15 @@ class Transaksi extends Model
     protected $table = 'transaksi';
     protected $guarded = ['id'];
 
-    public function post()
+    public function posts()
     {
-        $this->hasMany(Post::class);
+        return $this->hasMany(Post::class);
+    }
+
+    public function scopeFilter($query)
+    {
+        if (request('search')) {
+            $query->where('id', 'LIKE', '%'.request('search').'%');
+        }
     }
 }
